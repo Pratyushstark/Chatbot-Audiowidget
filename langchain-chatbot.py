@@ -17,12 +17,7 @@ import tempfile
 #Using dotenv to store confidential datas
 #load_dotenv()
 #api_key = os.getenv('ANTHROPIC_API_KEY')
-
-headers = {
-  "authorization": st.secrets['auth_token'],
-  "content-type": "application/json"
-}
-
+api_key = st.secrets["ANTHROPIC_API_KEY"]
 #Used the most basic model provided by Anthropic for this case
 model = Anthropic(
                   model="claude-v1",
