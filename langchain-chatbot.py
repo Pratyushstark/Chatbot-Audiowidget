@@ -15,8 +15,8 @@ from io import BytesIO
 import tempfile
 
 #Using dotenv to store confidential datas
-load_dotenv()
-api_key = os.getenv('ANTHROPIC_API_KEY')
+#load_dotenv()
+#api_key = os.getenv('ANTHROPIC_API_KEY')
 
 headers = {
   "authorization": st.secrets['auth_token'],
