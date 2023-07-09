@@ -18,6 +18,11 @@ import tempfile
 load_dotenv()
 api_key = os.getenv('ANTHROPIC_API_KEY')
 
+headers = {
+  "authorization": st.secrets['auth_token'],
+  "content-type": "application/json"
+}
+
 #Used the most basic model provided by Anthropic for this case
 model = Anthropic(
                   model="claude-v1",
